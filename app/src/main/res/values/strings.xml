@@ -1,8 +1,11 @@
 <resources>
-    <string name="app_name">WEgo</string>
+    <string name="app_name" translatable="false">WEgo</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
     <string name="action_settings">Settings</string>
+    <string name="enter_starting_location">Enter Starting Location</string>
+    <string name="enter_destination_location">Enter Destination Location</string>
+    <string name="set_start_to_current_location">Set Start to current Location</string>
 </resources>

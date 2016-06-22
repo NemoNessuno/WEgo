@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context=".FindLocationActivity">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <EditText
+        android:id="@+id/start_location_edit_text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_starting_location"
+        android:textAlignment = "viewStart"
+        android:singleLine="true"
+        android:paddingStart="0dp"
+        android:paddingEnd = "40dp"
+        android:inputType="textPostalAddress" />
+
+    <ImageButton
+        android:id="@+id/my_location_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:src="@android:drawable/ic_menu_mylocation"
+        android:contentDescription="@string/set_start_to_current_location"
+        android:tint="#000000"
+        android:background="@null"
+        />
+        </RelativeLayout>
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+</LinearLayout>
